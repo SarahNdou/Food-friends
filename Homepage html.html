@@ -1,54 +1,95 @@
 <!DOCTYPE html> 
+<html>
 <head>
-
-
-
-    <link rel= "stylesheet" href= "style_Homepage.css" />
-
-    <body>
-        <h1> Hello, welcome to Food Friends! </h1>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel= "stylesheet" href= "style_Homepage.css" />
+<body>
+    <h1> Hello, welcome to Food Friends! </h1>
 <h2>
-
-    <span style= "text-decoration: underline;">About us</span><br><br>
-        
-        We want to bring you delicious food on a budget!</h2>
-
+<span style= "text-decoration: underline;">About us</span><br><br>
+    We want to bring you delicious food on a budget!</h2>
 <div>
-        <ul>INSERT TEXT HERE
-        </ul>
-        </body>
-
+    <ul>Members of the team:
+        <li>Anya</li>
+        <li>Ella</li>
+        <li>Iyza</li>
+        <li>Layla</li>
+        <li>Sarah</li>
+    </ul>
+    </body>
 <h3> Check out our recipes:
-    
-    </h3>
-
-<article>
-
-    
-    <div class="image">
-    <figure>
-    <img src="Lentil bol.jpeg" alt="Recipe of the week" height="250" width="500"> 
-    <figcaption><a href="http://www.google.com" target="_blank"><h4>Recipe of the week</h4></a></figcaption></div>
-    </figure>
+</h3>
+<style>
+.container {
+ position: relative;
+width: 50%;
+}
+ .image {
+ opacity: 1;
+display: block;
+width: 100%;
+height: auto;
+transition: .5s ease;
+backface-visibility: hidden;
+}
+ .middle {
+transition: .5s ease;
+ opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
+}
+.container:hover .image {
+opacity: 0.3;
+}
+.container:hover .middle {
+opacity: 1;
+}
+.text {
+background-color: #4CAF50;
+color: white;
+font-size: 16px;
+ padding: 16px 32px;
+}
+ </style>
+ </head>
+ <body>
+<div class="container">
+    <img class = "image" src ="Lentil bol.jpeg" alt="Recipe of the week" height="500 width ="500">
+    <div class = "middle">
+        <div class = "text">Recipe of the week</div>
+    </div>
 </div>
-
-<div class="image">
+<div class="container">
     <figure>
-<img src="Vegetable curry.jpeg" alt="Vegetarian recipes" height="250" width="500"> 
-<figcaption><a href="http://www.google.com" target="_blank"><h4>Vegetarian recipes</h4></a></figcaption>
-</figure>
+<img class = "image" src="Vegetable curry.jpeg" alt="Vegetarian recipes" height="500" width="500"> 
+<div class = "middle">
+    <div class = "text"> Vegetarian recipes</div>
 </div>
-
-<div class="image">
+</div>
+<div class="container">
 <figure>
-    <img src="Vegan.jpg" alt="Vegan recipes" height="250" width="500">
-<figcaption><a href="http://www.google.com" target="_blank"><h4>Vegan recipes</h4></a></figcaption>
-</figure>
+    <img class = "image" src="Vegan.jpeg" alt="Vegan recipes" height="500" width="500">
+    <div class = "middle">
+        <div class = "text"> Vegan recipes</div>
+    </div>
+    </div>
+<div class="container">
+<figure>
+    <img class = "image" src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/easy_spaghetti_bolognese_93639_16x9.jpg" alt="Vegan recipes" height="500" width="500">
+    <div class = "middle">
+        <div class = "text"> Sphagetti bologonese</div>
+     </div>
+     </div>
+ <div class="container">
+<figure>
+    <img class = "image" src="https://www.tasteofhome.com/wp-content/uploads/2018/01/exps141668_SD153321B02_03_4b-1-696x696.jpg" alt="Vegan recipes" height="500" width="500">
+     <div class = "middle">
+         <div class = "text"> Griled flatbread veggie recipes</div>
+     </div>
+     </div>
 </div>
-
-</article>
-
-</div>
-
 </html>
